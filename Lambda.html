@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="reset.css">
+<link rel="stylesheet" type="text/css" href="Bootstrap/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+<script type="text/javascript" src="Bootstrap/bootstrap-3.3.7-dist/jquery/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="Bootstrap/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="Font-awesome/font-awesome-4.7.0/css/font-awesome.min.css">
+	<title>MEEEEEEEEEEEE</title><!--Creative | Lambda--> 
+	<style type="text/css">
+	@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=latin-ext');
+
+	html, body,.height, header {
+		overflow-x: hidden;
+	}
+		header {
+			background-image: url("images/lambda.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			color: white;
+			height: 860px;
+			overflow-y: visible;
+		}
+
+		.logo-wrapper {
+			position: relative;
+			display: inline-block;
+		}
+
+		.logo-text {
+			display: inline-block;
+			font-size: 24px;
+			color: white;
+		}
+
+		.lambda-logo-png {
+			width: 45px;
+			height: 100px;
+			display: inline-block !important;
+		}
+
+		li>a {
+			color: white !important;
+			padding: 38px 20px !important
+		}
+
+		.buttons {
+			float: right;
+		}
+
+		.moto-heading {
+			font-size: 48px;
+			margin-top: 15%;
+		}
+
+		.moto-text {
+			font-size: 24px;
+			margin-bottom: 4%;
+		}
+
+		.header-icons {
+			width: 200px;
+			height: 200px;
+		}
+
+		.circles-header {
+			width: 200px;
+			height: 200px;
+			background-color: rgba(96,143,156,0.5);
+			border-radius: 50%;
+		}
+
+		.white-line {
+			width: 40px;
+			height: 4px;
+			background-color: white;
+			margin-top: 2%;
+			margin-bottom: 2%;
+		}
+
+		.blue-line {
+			width: 40px;
+			height: 4px;
+			background-color: #6ba4b6;
+			margin-top: 2%;
+			margin-bottom: 2%;
+		}
+
+		nav {
+			border-bottom: 1px solid rgba(255,255,255,0.1) !important;
+			background-color: transparent !important;
+		    font-family: "Roboto Slab",sans-serif;
+		}
+
+		h1 {
+			font-family: "Roboto",sans-serif;
+			margin-top: 7%;
+		}
+
+		.overlay {
+		    background-color: rgba(86,154,167,0.7);
+		    position: absolute;
+		    z-index: 9999999;
+		    top: 0;
+		    bottom: 0;
+		}
+
+
+		.header-last-text {
+			margin-bottom: 35%;
+		}
+
+		.image-wrapper {
+			width: 28%;
+			margin-bottom: 2%;
+		}
+
+		.go-top-circle {
+			background-color: rgba(32,38,40,.82);
+			width: 32px;
+			height: 32px;
+			border-radius: 50%;
+			position: fixed;
+			bottom: 12px;
+			right: 30px;
+			z-index: 999999;
+		}
+
+		.arrow {
+			color: white;
+			position: absolute;
+			right: 12px;
+			bottom: 9px;
+		}
+
+		.header-wrapper {
+			position: relative;
+		}
+
+		.second-overlay {
+			position: absolute;
+			background-color: rgba(95,181,198,.8);
+			opacity: 0; 
+			width: 100%;
+			height: 100%;
+     		transition: all ease 0.5s;
+     		display: flex; 
+     		align-items: center;
+     		-webkit-justify-content: center;
+		}
+
+		.second-overlay:hover {
+			opacity: 1;
+		}
+
+		.relative {
+			position: relative;
+		}
+
+		h3 {
+			color: white;
+			font-family: "Roboto Slab - Regular",sans-serif;
+		}
+
+		.nav-hover {
+			display: inline-block;
+			position: relative;
+		}
+
+		.nav-hover:before {
+			content: '';
+			display: block;
+			margin: auto;
+			height: 3px;
+			width: 0px;
+			transition: width .2s ease;
+		}
+
+		.nav-hover:hover:before {
+			width: 100%;
+			background: white;
+		}
+
+		.services {
+			background-image: url("images/lambda2.jpg");
+			width: 100%;
+			height: 1008px;
+			background-size: cover;
+		    background-attachment: fixed;
+		    background-position: center;
+		    background-repeat: no-repeat;
+		    margin-top: 4%;
+		}
+
+		.white {
+			color: white;
+		}
+
+		.circles-services {
+			background-color: rgba(0,0,0,.1);
+			width: 100px;
+			height: 101px;
+			border-radius: 50%;
+			display: flex; 
+     		align-items: center;
+     		-webkit-justify-content: center;
+		}
+
+		.absolute {
+			position: absolute;
+		}
+
+		.white-icon {
+			color: white;
+		}
+
+		.no-effects,.no-effects:hover {
+			text-decoration: none !important;
+		}
+
+		 h4 {
+		 	color: white;
+		 	opacity: 0.6;
+		 	font-weight: 400;
+		 	font-family: "Roboto Slab",sans-serif;
+		 }
+
+		 h4:hover {
+		 	opacity: 1;
+		 	transition: all ease-in-out 0.3s;
+		 }
+
+		 p {
+		 	font-family: 'Roboto Slab - Light',sans-serif;
+		 	line-height: 1.7142857143;
+		 }
+
+		 .roboto-light {
+		 	font-family: 'Roboto - Light',sans-serif;
+		 }
+
+		 .third-section-circles {
+		 	width: 72px;
+		 	height: 72px;
+		 	border-radius: 50%;
+		 	background-color: #F7F7F7;
+		 	display: flex; 
+     		align-items: center;
+     		-webkit-justify-content: center;
+     		position: absolute;
+     		left: -17%;
+     		top: 14%;
+		 }
+
+		 .blue-icon {
+		 	color: #6BA4B6;
+		 }
+
+		 .third-section {
+		 	color: black;
+		 	opacity: 0.8;
+		 }
+
+		 .third-section:hover {
+		 	opacity: 0.8;
+		 }
+
+		 .third-section-wrapper {
+		 	margin-top: 7%;
+		 }
+
+		 .mini-wrapper-2 {
+		 	margin-top: 10%;
+		 }
+
+		 .mini-wrapper-3 {
+		 	margin-top: 10%;
+		 }
+
+		 .iphone-section {
+		 	background-image: url('images/iphone.jpg');
+		 	background-repeat: no-repeat;
+		 	background-size: 100%;
+		 	min-height: 500px;
+		 	background-attachment: fixed;
+		    background-position: center;
+		 }
+
+		 .responsive {
+		 	margin-top: 30%;
+		 	height: 200px;
+		 	width: 220px;
+		 	z-index: 99999999999;
+		 }
+
+		 .mobile-apps-text  {
+		 	position: relative;
+		 	margin-top: 10%;
+		 	font-size: 21px;
+		 	z-index: 9999;
+		 }
+
+		 .creative-desings-text {
+		 	position: relative;
+		 	font-size: 21px;
+		 	z-index: 99999;
+		 	margin-top: 5%;
+		 }
+
+		 .creative-deisngs-text-paragraph {
+		 	padding: 0px;
+		 }
+
+		 .overlay2 {
+		 	position: relative;
+		 	height: 500px;
+		 }
+
+		 .white-overlay {
+		 	background:rgba(255, 255, 255, 0.8);
+		 	width: 50%;
+		 	height: 100%;
+		 	position: absolute;
+		    z-index: 999;
+		    top: 0;
+		    bottom: 0;
+		 }
+
+		 .laptop-section {
+		 	background-image: url('images/laptop.jpg');
+		 	background-repeat: no-repeat;
+		 	background-size: 100%;
+		 	min-height: 500px;
+		 	background-attachment: fixed;
+		    background-position: center;
+		 }
+
+		 .scrollers {
+		 	margin-top: 15%;
+		 }
+
+	</style>
+
+</head>
+<body>
+<div class="container-fluid wrapper height">
+<div class="row height">
+		<div class="header-wrapper">
+			<header id="top">
+				<div class="overlay">
+					<nav class="navbar-default col-md-12">
+					<div>
+						<div class="logo-wrapper navbar-header">
+							<a href="Lambda.html" class="navbar-brand">
+								<img src="images/lambda-logo.png" alt="lambda-logo" class="lambda-logo-png">
+								<div class="logo-text">Lambda</div>
+							</a>
+						</div>
+						<div class="buttons">
+							<ul class="nav navbar-nav navigation-bar">
+								<li class="nav-hover"><a href="#">Home</a></li>
+								<li class="nav-hover"><a href="#">Pages</a></li>
+								<li class="nav-hover"><a href="#">Elements</a></li>
+								<li class="nav-hover"><a href="#">Portfolio</a></li>
+								<li class="nav-hover"><a href="#">Blog</a></li>
+								<li class="nav-hover"><a href="#">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+					</nav>
+					<div class="text-center row moto-wrapper">
+						<h1 class="moto-heading">Hello, this is Lambda</h1>
+						<div class="white-line col-md-offset-6"></div>
+						<p class="col-md-6 col-md-offset-3 moto-text">
+							We are a creative web design agency who are passionate with our pixels. We specialise in WordPress theme development and we create pixel perfect themes.
+						</p>
+					</div>
+					<div class="icons-and-text-wrapper text-center">
+						<div class="col-md-4">
+							<a href="#">
+								<div class="circles-header center-block">
+									<img src="images/pencil.png" alt="pencil" class="header-icons">
+								</div>
+							</a>
+							<h3>Made for the Web</h3>
+							<p class="header-last-text">Lambda is designed with attention to details. Our intention was to create a powerful theme that would to look cool and awesome.</p>
+						</div>
+						<div class="col-md-4">
+						<a href="#">
+							<div class="circles-header center-block">
+								<img src="images/display-and-maginifier.png" alt="display-and-maginifier" class="header-icons">
+							</div>
+						</a>
+							<h3>Retina Ready</h3>
+							<p class="header-last-text">Lambda is designed to look cool on any device from mobile and tablets to desktop computers and also on retina screens.</p>
+						</div>
+						<div class="col-md-4">
+						<a href="#">
+							<div class="circles-header center-block">
+								<img src="images/display-graphics.png" alt="display-graphics.png" class="header-icons">
+							</div>
+						</a>
+							<h3>SEO Optimised</h3>
+							<p class="header-last-text">Basic search engine optimisation is fundamental. Lambda makes sure that your website will be always be accessible.</p>
+						</div>
+					</div>
+				</div>
+			</header>
+		</div>
+			<main>
+				<div class="text-center">
+					<h1 class="text-center">Our latest work</h1>
+					<div class="blue-line col-md-12 col-md-offset-6"></div>
+					<p class="col-md-6 col-md-offset-3 moto-text">We provide design services that will adapt to your need. Desktop or mobile apps, website or print services. You name it.</p>
+				</div>
+					<section class="row">
+					<a href="#">
+						<div class="image-wrapper col-md-3 col-md-offset-1">
+							<div class="relative">
+								<div class="second-overlay">
+									<h3>Old guitar</h3>
+								</div>
+									<img src="images/guitar.jpg" alt="guitar" class="img-responsive">
+							</div>
+						</div>	
+					</a>
+
+					<a href="#">
+						<div class="image-wrapper col-md-3">
+							<div class="relative">
+								<div class="second-overlay">
+									<h3>Drinks on us</h3>
+								</div>
+									<img src="images/drinks.jpg" alt="drinks" class="img-responsive">
+							</div>
+						</div>
+					</a>
+
+					<a href="#">
+						<div class="image-wrapper col-md-3">
+							<div class="relative">
+								<div class="second-overlay">
+									<h3>Gravity grass</h3>
+								</div>
+									<img src="images/grass.jpg" alt="grass" class="img-responsive">
+							</div>
+						</div>
+					</a>
+
+					<a href="#">
+						<div class="image-wrapper col-md-3 col-md-offset-1">
+							<div class="relative">
+								<div class="second-overlay">
+									<h3>Rapid Longitude</h3>
+								</div>
+								<img src="images/pc-man.jpg" alt="pc-man" class="img-responsive">
+							</div>
+						</div>
+					</a>
+
+					<a href="#">
+						<div class="image-wrapper col-md-3">
+							<div class="relative">
+								<div class="second-overlay">
+									<h3>Risky Heart</h3>
+								</div>
+								<img src="images/bike-man.jpg" alt="bike-man" class="img-responsive">
+							</div>
+						</div>
+					</a>
+
+					<a href="#">
+						<div class="image-wrapper col-md-3">
+							<div class="relative">
+								<div class="second-overlay">
+									<h3>Frozen Logbook</h3>
+								</div>
+								<img src="images/pc-and-sunglasses.jpg" alt="pc-and-sunglasses" class="img-responsive">
+							</div>
+						</div>
+					</a>
+
+					<a href="#">
+						<div class="image-wrapper col-md-3 col-md-offset-1">
+							<div class="relative">
+								<div class="second-overlay">
+									<h3>Dirty old boots</h3>
+								</div>
+								<img src="images/boots.jpg" alt="boots" class="img-responsive">
+							</div>
+						</div>
+					</a>
+
+					<a href="#">
+						<div class="image-wrapper col-md-3">
+							<div class="relative">
+								<div class="second-overlay">
+									<h3>Wild Alpha</h3>
+								</div>
+								<img src="images/glasses.jpg" alt="glasses" class="img-responsive">
+							</div>
+						</div>
+					</a>
+
+					<a href="#">
+						<div class="image-wrapper col-md-3">
+							<div class="relative">
+								<div class="second-overlay">
+									<h3>Yellow Yard</h3>
+								</div>
+								<img src="images/woman-with-glasses.jpg" alt="woman-with-glasses" class="img-responsive">
+							</div>
+						</div>
+					</a>
+
+					<a href="#">
+						<div class="image-wrapper col-md-3 col-md-offset-1">
+							<div class="relative">
+								<div class="second-overlay">
+									<h3>Orange cocktail</h3>
+								</div>
+								<img src="images/cocktail.jpg" alt="cocktail" class="img-responsive">
+							</div>
+						</div>
+					</a>
+
+					<a href="#">
+						<div class="image-wrapper col-md-3">
+							<div class="relative">
+								<div class="second-overlay">
+									<h3>The black straw</h3>
+								</div>
+								<img src="images/woman-shake.jpg" alt="woman-shake" class="img-responsive">
+							</div>
+						</div>
+					</a>
+
+					<a href="#">
+						<div class="image-wrapper col-md-3">
+							<div class="relative">
+								<div class="second-overlay">
+									<h3>Wild forest</h3>
+								</div>
+								<img src="images/log.jpg" alt="log" class="img-responsive">
+							</div>
+						</div>
+					</a>
+					</section>
+
+					<section class="services relative">
+							<div class="overlay">
+								<h1 class="text-center white">Our services</h1>
+								<div class="white-line col-md-offset-6"></div>
+								<p class="col-md-9 col-md-offset-2 moto-text white text-center">We create a unique process for each client to ensure that business objectives are met, success is achieved and users are happy.</p>
+
+								<div class="row">
+									<div class="main-wrapper col-md-3">
+										<a href="#" class="no-effects">
+											<div class="mini-wrapper">
+												<div class="circles-services center-block">
+													<i class="fa fa-heart-o fa-3x white-icon"></i>
+												</div>
+												<h4 class="text-center">Awesome Design</h4>
+											</div>
+										</a>
+										<div class="text text-center white">											
+											<p class="roboto-light">Lambda is designed with attention to details. Our intention is to create a theme that would to look cool and awesome.</p>
+										</div>
+									</div>
+
+									<div class="main-wrapper col-md-3">
+										<a href="#" class="no-effects">
+											<div class="mini-wrapper">
+												<div class="circles-services center-block">
+													<i class="fa fa-cog fa-3x white-icon"></i>
+												</div>
+												<h4 class="text-center">Solid Support</h4>
+											</div>
+										</a>
+										<div class="text text-center white">											
+											<p class="roboto-light">With Lambda you get a five star customer support. As with all our themes you will receive our 100% rock solid support.</p>
+										</div>
+									</div>
+
+									<div class="main-wrapper col-md-3">
+										<a href="#" class="no-effects">
+											<div class="mini-wrapper">
+												<div class="circles-services center-block">
+													<i class="fa fa-map-o fa-3x white-icon"></i>
+												</div>
+												<h4 class="text-center">Ultra Flexible</h4>
+											</div>
+										</a>
+										<div class="text text-center white">											
+											<p class="roboto-light">Lambda is ultra flexible and lets you create stunning pages easily for any kind of site out of the box. Get started now.</p>
+										</div>
+									</div>
+
+									<div class="main-wrapper col-md-3">
+										<a href="#" class="no-effects">
+											<div class="mini-wrapper">
+												<div class="circles-services center-block">
+													<i class="fa fa-cloud fa-3x white-icon"></i>
+												</div>
+												<h4 class="text-center">SEO Optimised</h4>
+											</div>
+										</a>
+										<div class="text text-center white">											
+											<p class="roboto-light">Basic search engine optimisation is fundamental. Lambda makes sure that your website will be always be accessible.</p>
+										</div>
+									</div>
+
+									<div class="main-wrapper col-md-3">
+										<a href="#" class="no-effects">
+											<div class="mini-wrapper">
+												<div class="circles-services center-block">
+													<i class="fa fa-desktop fa-3x white-icon"></i>
+												</div>
+												<h4 class="text-center">Responsive Design</h4>
+											</div>
+										</a>
+										<div class="text text-center white">											
+											<p class="roboto-light">Lambda is designed to look cool on any device from mobile and tablets to desktop computers and also on retina screens.</p>
+										</div>
+									</div>
+
+									<div class="main-wrapper col-md-3">
+										<a href="#" class="no-effects">
+											<div class="mini-wrapper">
+												<div class="circles-services center-block">
+													<i class="fa fa-refresh fa-3x white-icon"></i>
+												</div>
+												<h4 class="text-center">Free Updates</h4>
+											</div>
+										</a>
+										<div class="text text-center white">											
+											<p class="roboto-light">With Lambda you get a free updates forever. Improvements and features will be added to make the theme future proof.</p>
+										</div>
+									</div>
+
+									<div class="main-wrapper col-md-3">
+										<a href="#" class="no-effects">
+											<div class="mini-wrapper">
+												<div class="circles-services center-block">
+													<i class="fa fa-calendar fa-3x white-icon"></i>
+												</div>
+												<h4 class="text-center">Solid Design</h4>
+											</div>
+										</a>
+										<div class="text text-center white">											
+											<p class="roboto-light">Lambda is ultra flexible and lets you create stunning pages easily for any kind of site out of the box. Get it now.</p>
+										</div>
+									</div>
+
+									<div class="main-wrapper col-md-3">
+										<a href="#" class="no-effects">
+											<div class="mini-wrapper">
+												<div class="circles-services center-block">
+													<i class="fa fa-eye fa-3x white-icon"></i>
+												</div>
+												<h4 class="text-center">Stunning Pages</h4>
+											</div>
+										</a>
+										<div class="text text-center white">											
+											<p class="roboto-light">Create stunning pages which look great on any device. Clean HTML5 and CSS, beautifully coded &#38; loads of features.</p>
+										</div>
+									</div>
+												
+								</div>
+							</div>			
+					</section>
+
+					<section class="clearfix">
+						<img src="images/devices-responsive.jpg" alt="devices-responsive" class="img-responsive col-md-5 col-md-push-1">
+
+						<div class="main-wrapper col-md-5 col-md-push-2 third-section-wrapper">
+							<div class="mini-wrappe relative">
+								<div class="third-section-circles">
+									<i class="fa fa-desktop fa-2x blue-icon" aria-hidden="true"></i>
+								</div>
+								<h4 class="third-section">Responsive design</h4>
+								<p>Lambda is designed to look cool on any device from mobile and tablets to desktop computers and also on retina screens.</p>
+							</div>
+
+							<div class="mini-wrapper relative mini-wrapper-2">
+								<div class="third-section-circles">
+									<i class="fa fa-refresh fa-2x blue-icon" aria-hidden="true"></i>
+								</div>
+								<h4 class="third-section">Free updates</h4>
+								<p>With Lambda you get a free updates forever. Improvements and features will be added to make the theme future proof.</p>
+							</div>
+
+							<div class="mini-wrapper relative mini-wrapper-3">
+								<div class="third-section-circles">
+									<i class="fa fa-eye fa-2x blue-icon" aria-hidden="true"></i>
+								</div>
+								<h4 class="third-section">Stunning pages</h4>
+								<p>Create stunning pages which look great on any device. Clean HTML5 and CSS, beautifully coded &#38; loads of features.</p>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<div class="iphone-section relative">
+								<div class="white-overlay"></div>
+								<div class="col-md-5 col-md-push-1 mobile-apps-text">
+									<h1>Mobile apps</h1>
+									<div class="blue-line"></div>
+									<p>Mobile devices are increasingly utilised to enable customers access their content from anywhere. We work with our clients to provide unique solutions for their mobile businesses and applications.</p>
+								</div>
+								
+								<div class="col-md-6 col-md-push-2">
+											<img src="images/responsive.png" alt="responsive" class="img-responsive col-md-1 col-md-push-2 responsive">			
+								</div>
+								<div class="overlay col-md-6 col-md-push-6"></div>
+						</div>
+
+						<div class="laptop-section relative">
+							<div class="overlay col-md-6"></div>
+							<div>
+								<img src="images/scrollers.png" alt="scrollers" class="img-responsive responsive scrollers col-md-2 col-md-push-2">
+							</div>
+							<div class="col-md-6 col-md-push-5 creative-desings-text">
+								<h1>Creative Designs</h1>
+								<div class="blue-line"></div>
+								<p class="col-md-8 creative-deisngs-text-paragraph">We create custom desktop apps so that users can interact with websites as though they’re native applications. We work with our clients to understand the needs and expectations for the user experience.</p>
+							</div>
+							<div class="white-overlay col-md-push-6"></div>
+						</div>
+					</section>
+			</main>
+</div>
+	<a href="#top">
+		<div class="go-top-circle">
+			<i class="fa fa-angle-up arrow" aria-hidden="true"></i>
+		</div>
+	</a>
+</div>
+</body>
+</html>
