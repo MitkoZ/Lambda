@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
@@ -9,6 +9,7 @@
 <script type="text/javascript" src="Bootstrap/bootstrap-3.3.7-dist/jquery/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="Bootstrap/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="Font-awesome/font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 	<title>MEEEEEEEEEEEE</title><!--Creative | Lambda--> 
 	<style type="text/css">
 	@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=latin-ext');
@@ -104,9 +105,11 @@
 		.overlay {
 		    background-color: rgba(86,154,167,0.7);
 		    position: absolute;
-		    z-index: 9999999;
+		    z-index: 9999;
 		    top: 0;
 		    bottom: 0;
+		    right: 0;
+		    left: 0;
 		}
 
 
@@ -301,13 +304,13 @@
 		 	position: relative;
 		 	margin-top: 10%;
 		 	font-size: 21px;
-		 	z-index: 9999;
+		 	z-index: 999999;
 		 }
 
 		 .creative-desings-text {
 		 	position: relative;
 		 	font-size: 21px;
-		 	z-index: 99999;
+		 	z-index: 9999999;
 		 	margin-top: 5%;
 		 }
 
@@ -325,11 +328,17 @@
 		 	width: 50%;
 		 	height: 100%;
 		 	position: absolute;
-		    z-index: 999;
+		    z-index: 999999;
 		    top: 0;
 		    bottom: 0;
+		    right: 0;
+		    left: 0;
 		 }
 
+		 .laptop-white-overlay {
+		 	margin-left: 50%;
+		 }
+		 
 		 .laptop-section {
 		 	background-image: url('images/laptop.jpg');
 		 	background-repeat: no-repeat;
@@ -342,6 +351,88 @@
 		 .scrollers {
 		 	margin-top: 15%;
 		 }
+
+		 .item {
+		 	background-color: rgba(255, 255, 255, 0.8);
+		 }
+
+		 cite {
+		 	font-style: italic;
+		 	color: black;
+		 }
+
+		 blockquote:before {
+		    display: block;
+		    padding-left: 10px;
+		    content: "\201C";
+		    font-family: Georgia;
+		    font-size: 84px;
+		  	position: absolute;
+		    left: -10px;
+		    top: -20px;
+		    color: rgba(48,60,64,.2);
+		}
+
+		.blockquote-text {
+		    font-size: 24px;
+			font-family: "Roboto Slab";
+			font-weight: 300;
+		}
+
+		.woman-and-text-section {
+			background-image: url("images/woman.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			min-height: 405px;
+		}
+
+		.carousel-item-text {
+			z-index: 9999999;
+			min-height: 405px;
+		}
+
+		.woman-video-section {
+			position: absolute;
+     		z-index: 99999;
+     		top: 40%;
+     		right: 20%;
+		}
+
+		.carousel-indicators {
+			z-index: 99999999;
+		}
+
+		.modal {
+			z-index: 9999999999;
+			overflow-y: hidden !important;
+		}
+
+		.modal-content {
+			background-color: transparent;
+			box-shadow: none;
+			border: none;
+			width: 930px;
+		}
+
+		.modal-dialog {
+			width: 930px;
+		}
+
+		.modal-header {
+			border-bottom: none;
+		}
+
+		.black-close-button {
+			width: 36px;
+			height: 36px;
+			background-color: black;
+			color: white;
+			border: none;
+			float: right;
+			position: relative;
+			top: 25px;
+			right: 2px;
+		}
 
 	</style>
 
@@ -714,13 +805,14 @@
 								</div>
 								
 								<div class="col-md-6 col-md-push-2">
-											<img src="images/responsive.png" alt="responsive" class="img-responsive col-md-1 col-md-push-2 responsive">			
+											<img src="images/responsive.png" alt="responsive" class="img-responsive col-md-1 col-md-push-2 responsive">
+
 								</div>
-								<div class="overlay col-md-6 col-md-push-6"></div>
+								<div class="overlay"></div>
 						</div>
 
 						<div class="laptop-section relative">
-							<div class="overlay col-md-6"></div>
+							<div class="overlay"></div>
 							<div>
 								<img src="images/scrollers.png" alt="scrollers" class="img-responsive responsive scrollers col-md-2 col-md-push-2">
 							</div>
@@ -729,9 +821,59 @@
 								<div class="blue-line"></div>
 								<p class="col-md-8 creative-deisngs-text-paragraph">We create custom desktop apps so that users can interact with websites as though they’re native applications. We work with our clients to understand the needs and expectations for the user experience.</p>
 							</div>
-							<div class="white-overlay col-md-push-6"></div>
+							<div class="white-overlay laptop-white-overlay"></div>
 						</div>
+
+						<div class="woman-and-text-section relative">
+							<div class="text-near-woman carousel slide text-center col-md-6" id="carousel-text" data-ride="carousel">
+
+								<ol class="carousel-indicators">
+									<li data-target="#text-near-woman" data-slide-to="0" class="active"></li>
+									<li data-target="#text-near-woman" data-slide-to="1" class="active"></li>
+								</ol>
+
+								<div class="carousel-inner" role="listbox">
+									<div class="item active relative carousel-item-text">
+										<blockquote>
+											<p class="blockquote-text">Vivamus quis mi. Donec posuere vulputate arcu. Sed in libero ut nibh placerat accumsan. Donec pede justo, fringilla vel, aliquet nec.</p>
+											<footer>John Dalton <cite title="Source Title">CartoonPix</cite></footer>
+										</blockquote>
+									</div>
+
+									<div class="item relative carousel-item-text">
+										<blockquote>
+											<p class="blockquote-text">Vivamus quis mi. Donec posuere vulputate arcu. Sed in libero ut nibh placerat accumsan. Donec pede justo, fringilla vel, aliquet nec.</p>
+											<footer>Gary Shelby <cite title="Source Title">MediaPress</cite></footer>
+										</blockquote>
+									</div>
+								</div>
+							</div>
+						
+							<div class="woman-video-section text-center"> 
+								<a href="#" data-toggle="modal" data-target="#video-modal"><img src="images/play-button.png" alt="play-button"></a>
+								<h3 class="white">View the video</h3>								  
+							</div>
+
+							<div class="overlay"></div>
+								<div class="modal fade" id="video-modal" role="dialog">
+								    <div class="modal-dialog">
+								      <div class="modal-content">
+									        <div class="modal-header">
+									          <button class="black-close-button" data-dismiss="modal">
+									          		&times;
+									          </button>
+									        </div>
+									        <div class="modal-body">
+									        	<iframe width="898" height="506" src="https://www.youtube.com/embed/gDZOiM_QV7I?autoplay=1" allowfullscreen></iframe>
+									        </div>    
+									  </div>
+									</div>
+								</div>
+						</div>
+						
 					</section>
+
+
 			</main>
 </div>
 	<a href="#top">
