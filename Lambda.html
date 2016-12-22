@@ -9,14 +9,16 @@
 <script type="text/javascript" src="Bootstrap/bootstrap-3.3.7-dist/jquery/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="Bootstrap/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="Font-awesome/font-awesome-4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 	<title>MEEEEEEEEEEEE</title><!--Creative | Lambda--> 
 	<style type="text/css">
-	@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=latin-ext');
+		html, body,.height, header {
+			overflow-x: hidden;
+		}
 
-	html, body,.height, header {
-		overflow-x: hidden;
-	}
+		body {
+		    font-family: "Roboto Slab";
+		}
+
 		header {
 			background-image: url("images/lambda.jpg");
 			background-size: cover;
@@ -46,7 +48,7 @@
 
 		li>a {
 			color: white !important;
-			padding: 38px 20px !important
+			padding: 38px 20px !important;
 		}
 
 		.buttons {
@@ -91,14 +93,19 @@
 			margin-bottom: 2%;
 		}
 
+		.blue-line-near-people {
+			width: 60px;
+			height: 4px;
+		}
+
 		nav {
 			border-bottom: 1px solid rgba(255,255,255,0.1) !important;
 			background-color: transparent !important;
-		    font-family: "Roboto Slab",sans-serif;
+		    font-family: "Roboto Slab";
 		}
 
 		h1 {
-			font-family: "Roboto",sans-serif;
+			font-family: "Roboto Slab";
 			margin-top: 7%;
 		}
 
@@ -111,7 +118,6 @@
 		    right: 0;
 		    left: 0;
 		}
-
 
 		.header-last-text {
 			margin-bottom: 35%;
@@ -166,7 +172,7 @@
 
 		h3 {
 			color: white;
-			font-family: "Roboto Slab - Regular",sans-serif;
+			font-family: "Roboto Slab - Regular";
 		}
 
 		.nav-hover {
@@ -229,7 +235,7 @@
 		 	color: white;
 		 	opacity: 0.6;
 		 	font-weight: 400;
-		 	font-family: "Roboto Slab",sans-serif;
+		 	font-family: "Roboto Slab";
 		 }
 
 		 h4:hover {
@@ -238,12 +244,12 @@
 		 }
 
 		 p {
-		 	font-family: 'Roboto Slab - Light',sans-serif;
+		 	font-family: 'Roboto Slab - Light';
 		 	line-height: 1.7142857143;
 		 }
 
 		 .roboto-light {
-		 	font-family: 'Roboto - Light',sans-serif;
+		 	font-family: 'Roboto - Light';
 		 }
 
 		 .third-section-circles {
@@ -368,11 +374,16 @@
 		    font-family: Georgia;
 		    font-size: 84px;
 		  	position: absolute;
-		    left: -10px;
+		    left: -60px;
 		    top: -20px;
 		    color: rgba(48,60,64,.2);
 		}
 
+		blockquote {
+		 position: relative;
+		 -webkit-transform: translateY(50%);
+		}
+		
 		.blockquote-text {
 		    font-size: 24px;
 			font-family: "Roboto Slab";
@@ -405,6 +416,7 @@
 		.modal {
 			z-index: 9999999999;
 			overflow-y: hidden !important;
+		    background-color: rgba(255, 255, 255, .9);
 		}
 
 		.modal-content {
@@ -434,6 +446,77 @@
 			right: 2px;
 		}
 
+		.text-near-woman {
+			padding: 0px;
+		}
+
+		.remove-border {
+			border: none;
+		}
+
+		.people-paragraph-text-size {
+			font-size: 24px;
+		}
+
+		.person-heading {
+			color: black;
+		}
+
+		.social-icons-wrapper:hover {
+			opacity: 1;
+		}
+
+		.each-person {
+		  position: relative;
+		}
+
+		.each-person-image {
+		  display: block;
+		  width: 100%;
+		  height: auto;
+		}
+
+		.person-overlay {
+		  position: absolute;
+		  top: 0;
+		  bottom: 0;
+		  left: 0;
+		  right: 0;
+		  height: 100%;
+		  width: 100%;
+		  opacity: 0;
+		  transition: .5s ease;
+		  background-color: rgba(95,181,198,.8);
+		}
+
+		.each-person:hover .person-overlay {
+		  opacity: 1;
+		}
+
+		.social-icons {
+		  color: white;
+		  font-size: 20px;
+		  position: absolute;
+		  top: 90%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  -ms-transform: translate(-50%, -50%);
+		}
+
+		.remove-anchor-attributes:hover {
+			color: white;
+			text-decoration: none;
+		}
+
+		.remove-anchor-attributes {
+			color: white;
+		}
+
+		.remove-anchor-attributes:visited {
+			color: white;
+		}
+
+		
 	</style>
 
 </head>
@@ -834,14 +917,14 @@
 
 								<div class="carousel-inner" role="listbox">
 									<div class="item active relative carousel-item-text">
-										<blockquote>
+										<blockquote class="col-md-8 col-md-push-2 remove-border">
 											<p class="blockquote-text">Vivamus quis mi. Donec posuere vulputate arcu. Sed in libero ut nibh placerat accumsan. Donec pede justo, fringilla vel, aliquet nec.</p>
 											<footer>John Dalton <cite title="Source Title">CartoonPix</cite></footer>
 										</blockquote>
 									</div>
 
 									<div class="item relative carousel-item-text">
-										<blockquote>
+										<blockquote class="col-md-8 col-md-push-2 remove-border">
 											<p class="blockquote-text">Vivamus quis mi. Donec posuere vulputate arcu. Sed in libero ut nibh placerat accumsan. Donec pede justo, fringilla vel, aliquet nec.</p>
 											<footer>Gary Shelby <cite title="Source Title">MediaPress</cite></footer>
 										</blockquote>
@@ -869,10 +952,48 @@
 									  </div>
 									</div>
 								</div>
-						</div>
-						
+						</div>						
 					</section>
 
+					<section>
+						<h1 class="text-center">Why Us?</h1>
+						<div class="blue-line center-block blue-line-near-people"></div>
+						<p class="people-paragraph-text-size text-center col-md-6 col-md-push-3">
+							We’re a team of experts who love to create beautiful online experiences and innovative solutions.
+						</p>
+						<div class="people-wrapper col-md-12">
+							<div class="col-md-3">
+								<div class="each-person">
+									<div class="each-person">
+									  <img src="images/shirley-king.jpg" alt="Shirley King" class="responsive each-person-image">
+									  <div class="person-overlay">
+									    <div class="social-icons">
+						    				<a href="#" class="remove-anchor-attributes">
+						    					<i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
+						    				</a>
+											<a href="#" class="remove-anchor-attributes">
+												<i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+											</a>
+											<a href="#" class="remove-anchor-attributes">
+												<i class="fa fa-dribbble fa-lg" aria-hidden="true"></i>
+											</a>
+											<a href="#" class="remove-anchor-attributes">
+												<i class="fa fa-behance fa-lg" aria-hidden="true"></i>
+											</a>
+								    	</div>
+									  </div>
+									</div>
+								</div>
+								<div class="person-text">
+										<h3 class="person-heading"><strong>Shirley King</strong> Designer</h3>
+										<p>
+											Objectively innovate empowered manufactured products whereas parallel platforms. Holisticly testing procedures.
+										</p>
+								</div>
+							</div>
+									
+						</div>
+					</section>
 
 			</main>
 </div>
