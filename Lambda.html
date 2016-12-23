@@ -11,7 +11,7 @@
 <link rel="stylesheet" type="text/css" href="Font-awesome/font-awesome-4.7.0/css/font-awesome.min.css">
 	<title>MEEEEEEEEEEEE</title><!--Creative | Lambda--> 
 	<style type="text/css">
-		html, body,.height, header {
+		html, body, header {
 			overflow-x: hidden;
 		}
 
@@ -135,7 +135,7 @@
 			border-radius: 50%;
 			position: fixed;
 			bottom: 12px;
-			right: 30px;
+			right: 10px;
 			z-index: 999999;
 		}
 
@@ -474,6 +474,7 @@
 		  display: block;
 		  width: 100%;
 		  height: auto;
+		  margin-top: 5%;
 		}
 
 		.person-overlay {
@@ -503,7 +504,7 @@
 		  -ms-transform: translate(-50%, -50%);
 		}
 
-		.remove-anchor-attributes:hover {
+		.remove-anchor-attributes:hover, .remove-anchor-attributes:focus {
 			color: white;
 			text-decoration: none;
 		}
@@ -516,13 +517,171 @@
 			color: white;
 		}
 
+		.people-wrapper {
+			margin-bottom: 5%;
+		}
+
+		.main-bottom {
+		    background-image: url("images/bottom-background.jpg");
+		    min-height: 320px;
+		    background-attachment: fixed;
+		    background-position: center;
+		    background-repeat: no-repeat;
+		    background-size: cover;
+		}
+
+		.bottom-transparent-button {
+			border-radius: 28px;
+			background-color: transparent;
+			border-width: 1px solid;
+			border-color: white;
+			padding: 10px 24px;
+			color: rgba(255, 255, 255, 0.5);
+			font-size: 18px;
+		}
+
+		.bottom-transparent-button:hover {
+			transition: all ease-in-out 0.2s;
+			text-decoration: none;
+			color: rgba(255, 255, 255, 1);
+		}
+
+		.bottom-transparent-button:focus {
+			color: white;
+			text-decoration: none;
+		}
+
+		.bottom-transparent-button:visited {
+			text-decoration: none;
+		}
+
+		.z-index-top {
+			z-index: 9999999999;
+		}
+
+		.main-bottom-wrapper {
+			text-align: center;
+			position: absolute;
+			top: 25%;
+		}
+
+		.footer-upper {
+			background-color: #272E31;
+			min-height: 430.500px;
+		}
+
+		.footer-wrapper {
+			padding: 0px;
+		}
+
+		.footer-upper-headings {
+			margin-top: 0px;
+		}
+
+		.grey-color-footer {
+			color: rgba(255,255,255,.6);
+		}
+
+		.footer-upper-text p {
+			font-family: "Roboto";
+		}
+
+		.recent-post-avatar {
+			width: 40px;
+			height: 40px;
+		}
+
+		.remove-anchor-effects-footer:hover, .remove-anchor-effects-footer:focus {
+			text-decoration: none;
+		}
+
+		.bottom-recent-post-text {
+			width: 200px;
+			bottom: 0px; 
+			left: 50px;
+		}
+
+		.upper-recent-post-text {
+			width: 200px;
+			top:0px; 
+			left: 50px;
+		}
+
+		.inline-block {
+			display: inline-block;
+			margin-bottom: 10px;
+			margin-top: 10px;
+		}
+
+		.footer-underline {
+		    border-bottom: solid rgba(255, 255, 255 ,0.0980392);
+		    border-bottom-width: 0.5px;
+		    width: 240px;
+		}
+
+		.footer-li {
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
 		
+		.footer-anchor-attributes-remove {
+			padding: 0px !important;
+		}
+
+		.footer-anchor-attributes-remove:hover,.footer-anchor-attributes-remove:focus {
+			text-decoration: none;
+		}
+
+		.about-us, .recent-posts, .categories, .archives {
+			margin-top: 3%;
+		}
+
+		.footer-lower {
+			background-color: #17191b;
+		}
+
+		.footer-icons-size {
+			padding: 10px;
+		}
+
+		.footer-icons-wrapper {
+			float: right;
+			height: 44px;
+			margin-right: 10%;
+			display: flex;
+			align-items: center;
+		}
+
+		.facebook-footer-icon:hover {
+			color: rgb(59, 89, 152);
+			transition: color .2s; 
+		}
+
+		.dribbble-footer-icon:hover {
+			color: rgb(234, 76, 137);
+			transition: color .2s;
+		}
+
+		.twitter-footer-icon:hover {
+			color: rgb(0, 172, 238);
+			transition: color .2s;
+		}
+
+		.google-plus-footer-icon:hover {
+		    color: rgb(228, 81, 53);
+		    transition: color .2s;
+		}
+
+		.youtube-footer-icon:hover {
+			color: rgb(196, 48, 43);
+			transition: color .2s;
+		}
 	</style>
 
 </head>
 <body>
-<div class="container-fluid wrapper height">
-<div class="row height">
+<div class="container-fluid wrapper">
+<div class="row">
 		<div class="header-wrapper">
 			<header id="top">
 				<div class="overlay">
@@ -947,7 +1106,7 @@
 									          </button>
 									        </div>
 									        <div class="modal-body">
-									        	<iframe width="898" height="506" src="https://www.youtube.com/embed/gDZOiM_QV7I?autoplay=1" allowfullscreen></iframe>
+									        	<iframe width="898" height="506" src="https://www.youtube.com/embed/gDZOiM_QV7I?autoplay=0" allowfullscreen></iframe>
 									        </div>    
 									  </div>
 									</div>
@@ -991,11 +1150,338 @@
 										</p>
 								</div>
 							</div>
-									
+
+							<div class="col-md-3">
+								<div class="each-person">
+									<div class="each-person">
+									  <img src="images/dorothy-lewis.jpg" alt="Dorothy Lewis" class="responsive each-person-image">
+									  <div class="person-overlay">
+									    <div class="social-icons">
+						    				<a href="#" class="remove-anchor-attributes">
+						    					<i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
+						    				</a>
+											<a href="#" class="remove-anchor-attributes">
+												<i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+											</a>
+											<a href="#" class="remove-anchor-attributes">
+												<i class="fa fa-behance fa-lg" aria-hidden="true"></i>
+											</a>
+											<a href="#" class="remove-anchor-attributes">
+												<i class="fa fa-dribbble fa-lg" aria-hidden="true"></i>
+											</a>
+								    	</div>
+									  </div>
+									</div>
+								</div>
+								<div class="person-text">
+										<h3 class="person-heading"><strong>Dorothy Lewis</strong> Designer</h3>
+										<p>
+											Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate
+										</p>
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="each-person">
+									<div class="each-person">
+									  <img src="images/carl-barnes.jpg" alt="Carl Barnes" class="responsive each-person-image">
+									  <div class="person-overlay">
+									    <div class="social-icons">
+						    				<a href="#" class="remove-anchor-attributes">
+						    					<i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
+						    				</a>
+						    				<a href="#" class="remove-anchor-attributes">
+												<i class="fa fa-behance fa-lg" aria-hidden="true"></i>
+											</a>
+											<a href="#" class="remove-anchor-attributes">
+												<i class="fa fa-dribbble fa-lg" aria-hidden="true"></i>
+											</a>
+											<a href="#" class="remove-anchor-attributes">
+												<i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+											</a>
+								    	</div>
+									  </div>
+									</div>
+								</div>
+								<div class="person-text">
+										<h3 class="person-heading"><strong>Carl Barnes</strong> Designer</h3>
+										<p>
+											Interactively procrastinate high-payoff content without backward-compatible data. Quickly cultivate processes
+										</p>
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="each-person">
+									<div class="each-person">
+									  <img src="images/joe-ross.jpg" alt="Joe Ross" class="responsive each-person-image">
+									  <div class="person-overlay">
+									    <div class="social-icons">
+									    	<a href="#" class="remove-anchor-attributes">
+												<i class="fa fa-dribbble fa-lg" aria-hidden="true"></i>
+											</a>
+											<a href="#" class="remove-anchor-attributes">
+												<i class="fa fa-behance fa-lg" aria-hidden="true"></i>
+											</a>
+											<a href="#" class="remove-anchor-attributes">
+												<i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+											</a>	
+								    	</div>
+									  </div>
+									</div>
+								</div>
+								<div class="person-text">
+										<h3 class="person-heading"><strong>Joe Ross</strong> Designer</h3>
+										<p>
+											Synergistically evolve 2.0 technologies rather than just in time initiatives. Quickly deploy strategic networks.
+										</p>
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="each-person">
+									<div class="each-person">
+									  <img src="images/kevin-james.jpg" alt="Kevin James" class="responsive each-person-image">
+									  <div class="person-overlay">
+									    <div class="social-icons">
+						    				<a href="#" class="remove-anchor-attributes">
+						    					<i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+						    				</a>
+											<a href="#" class="remove-anchor-attributes">
+												<i class="fa fa-google-plus fa-lg" aria-hidden="true"></i>
+											</a>
+											<a href="#" class="remove-anchor-attributes">
+												<i class="fa fa-git fa-lg" aria-hidden="true"></i>
+											</a>
+								    	</div>
+									  </div>
+									</div>
+								</div>
+								<div class="person-text">
+										<h3 class="person-heading"><strong>Kevin James</strong> CEO</h3>
+										<p>
+											Proactively envisioned multimedia based expertise and cross-media growth strategies. Seamlessly and intellectual.
+										</p>
+								</div>
+							</div>
+							
+							<div class="col-md-3">
+								<div class="each-person">
+									<div class="each-person">
+									  <img src="images/dorothy-lewis2.jpg" alt="Dorothy Lewis" class="responsive each-person-image">
+									  <div class="person-overlay">
+									    <div class="social-icons">
+						    				<a href="#" class="remove-anchor-attributes">
+						    					<i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
+						    				</a>
+						    				<a href="#" class="remove-anchor-attributes">
+												<i class="fa fa-behance fa-lg" aria-hidden="true"></i>
+											</a>
+											<a href="#" class="remove-anchor-attributes">
+												<i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+											</a>
+											<a href="#" class="remove-anchor-attributes">
+												<i class="fa fa-dribbble fa-lg" aria-hidden="true"></i>
+											</a>
+								    	</div>
+									  </div>
+									</div>
+								</div>
+								<div class="person-text">
+										<h3 class="person-heading"><strong>Dorothy Lewis</strong> Designer</h3>
+										<p>
+											Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate.
+										</p>
+								</div>
+							</div>	
+
+							<div class="col-md-3">
+								<div class="each-person">
+									<div class="each-person">
+									  <img src="images/chris-hill.jpg" alt="Chris Hill" class="responsive each-person-image">
+									  <div class="person-overlay">
+									    <div class="social-icons">
+									    	<a href="#" class="remove-anchor-attributes">
+												<i class="fa fa-dribbble fa-lg" aria-hidden="true"></i>
+											</a>
+						    				<a href="#" class="remove-anchor-attributes">
+						    					<i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
+						    				</a>
+											<a href="#" class="remove-anchor-attributes">
+												<i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+											</a>
+											<a href="#" class="remove-anchor-attributes">
+												<i class="fa fa-skype fa-lg" aria-hidden="true"></i>
+											</a>
+								    	</div>
+									  </div>
+									</div>
+								</div>
+								<div class="person-text">
+										<h3 class="person-heading"><strong>Chris Hill</strong> Developer</h3>
+										<p>
+											Collaboratively administrate turnkey channels whereas virtual e-tailers. Objectively seize and scalable metrics.
+										</p>
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="each-person">
+									<div class="each-person">
+									  <img src="images/diane-griffin.jpg" alt="Diane Griffin" class="responsive each-person-image">
+									  <div class="person-overlay">
+									    <div class="social-icons">
+											<a href="#" class="remove-anchor-attributes">
+												<i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+											</a>
+											<a href="#" class="remove-anchor-attributes">
+												<i class="fa fa-google-plus fa-lg" aria-hidden="true"></i>
+											</a>
+								    	</div>
+									  </div>
+									</div>
+								</div>
+								<div class="person-text">
+										<h3 class="person-heading"><strong>Diane Griffin</strong> Director</h3>
+										<p>
+											Credibly innovate granular internal sources whereas high standards in web-readiness. With optimal wise networks.
+										</p>
+								</div>
+							</div>
 						</div>
 					</section>
 
+					<section class="main-bottom col-md-12">
+						<div class="main-bottom-wrapper col-md-8 z-index-top col-md-push-2">
+							<h2 class="white text-center">
+								The most advanced, flexible and awesome theme you’ve ever seen. Need more? Feel free to contact us.
+							</h2>
+							<div class="white-line center-block"></div>
+							<a href="#" class="bottom-transparent-button btn">let's work together</a>
+						</div>
+						<div class="overlay"></div>
+					</section>
 			</main>
+
+			<footer class="col-md-12 footer-wrapper">
+				<div class="footer-upper">
+					<div class="about-us col-md-3">
+						<h3 class="footer-upper-headings">About Us</h3>
+						<div class="footer-upper-text">
+							<p class="grey-color-footer">
+								Create stunning pages with our <span class="white">powerful</span> admin panel. Functionality and usability combine to let you design your pages without any coding.
+							</p>
+							<p class="grey-color-footer">
+								Get Lambda now and start creating the <span class="white">perfect</span> site for you right away.
+							</p>
+						</div>
+					</div>
+
+					<div class="recent-posts col-md-3">
+						<div class="footer-underline">
+							<h3 class="footer-upper-headings">Recent posts</h3>
+								<div class="relative inline-block">
+									<a href="#" class="remove-anchor-effects-footer" title="Put Your Head on My Shoulders">
+										<img src="images/avatar-woman.jpg" alt="Avatar" class="recent-post-avatar">
+										<span class="white absolute upper-recent-post-text">Put Your Head on My Shoulders</span>
+									</a>
+										<span class="grey-color-footer absolute bottom-recent-post-text">September 25, 2014</span>
+								</div> 
+							</div>
+
+							<div class="footer-underline">
+								<div class="relative inline-block">
+									<a href="#" class="remove-anchor-effects-footer" title="A Flight to Remember">
+										<img src="images/avatar-man-with-bicycle.jpg" alt="Avatar" class="recent-post-avatar">
+										<span class="white absolute upper-recent-post-text">A Flight to Remember</span>
+									</a>
+										<span class="grey-color-footer absolute bottom-recent-post-text">September 25, 2014</span>
+								</div> 
+							</div>
+
+							<div>
+								<div class="relative inline-block">
+									<a href="#" class="remove-anchor-effects-footer" title="The Beast with a Billion Backs">
+										<img src="images/avatar-guitar.jpg" alt="Avatar" class="recent-post-avatar">
+										<span class="white absolute upper-recent-post-text">The Beast with a Billion Backs</span>
+									</a>
+										<span class="grey-color-footer absolute bottom-recent-post-text">September 25, 2014</span>
+								</div> 
+							</div>
+					</div>
+					<div class="categories col-md-3">
+						<h3 class="footer-upper-headings">Categories</h3>
+						<ul class="white">
+							<li class="footer-underline footer-li">
+								<a href="#" class="footer-anchor-attributes-remove">Art &amp; Culture</a>
+							</li>
+							<li class="footer-underline footer-li">
+								<a href="#" class="footer-anchor-attributes-remove">Education</a>
+							</li>
+							<li class="footer-underline footer-li">
+								<a href="#" class="footer-anchor-attributes-remove">Food &amp; Health</a>
+							</li>
+							<li class="footer-underline footer-li">
+								<a href="#" class="footer-anchor-attributes-remove">Movies</a>
+							</li>
+							<li class="footer-underline footer-li">
+								<a href="#" class="footer-anchor-attributes-remove">Sports</a>
+							</li>
+							<li class="footer-li">
+								<a href="#" class="footer-anchor-attributes-remove">Travel</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="archives col-md-3">
+						<h3 class="footer-upper-headings">Archives</h3>
+						<ul class="white">
+							<li class="footer-underline footer-li">
+								<a href="#" class="footer-anchor-attributes-remove">September 2014</a>
+							</li>
+							<li class="footer-underline footer-li">
+								<a href="#" class="footer-anchor-attributes-remove">August 2014</a>
+							</li>
+							<li class="footer-underline footer-li">
+								<a href="#" class="footer-anchor-attributes-remove">July 2014</a>
+							</li>
+							<li class="footer-underline footer-li">
+								<a href="#" class="footer-anchor-attributes-remove">June 2014</a>
+							</li>
+							<li class="footer-li">
+								<a href="#" class="footer-anchor-attributes-remove">May 2014</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="footer-lower col-md-12 clearfix">
+					<div class="inline-block grey-color-footer col-md-4 col-md-push-1">
+						Lambda Wordpress Theme. Copyright 2015 Oxygenna
+					</div>
+					<div class="footer-icons-wrapper">
+						<a href="#" class="remove-anchor-attributes">
+							<i class="fa fa-facebook fa-lg white facebook-footer-icon footer-icons-size" aria-hidden="true"></i>
+						</a>
+
+						<a href="#" class="remove-anchor-attributes">
+							<i class="fa fa-dribbble fa-lg white dribbble-footer-icon footer-icons-size" aria-hidden="true"></i>
+						</a>
+
+						<a href="#" class="remove-anchor-attributes">
+							<i class="fa fa-twitter fa-lg white twitter-footer-icon footer-icons-size" aria-hidden="true"></i>
+						</a>
+
+						<a href="#" class="remove-anchor-attributes">
+							<i class="fa fa-google-plus fa-lg white google-plus-footer-icon footer-icons-size" aria-hidden="true"></i>
+						</a>
+
+						<a href="#" class="remove-anchor-attributes">
+							<i class="fa fa-youtube fa-lg white youtube-footer-icon footer-icons-size" aria-hidden="true"></i>
+						</a>
+					</div>
+				</div>
+			</footer>
 </div>
 	<a href="#top">
 		<div class="go-top-circle">
