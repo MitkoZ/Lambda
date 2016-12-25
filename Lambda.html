@@ -786,6 +786,16 @@
 				height: 2200px;
 			}
 
+			.services {
+				height: 1908px;
+			}
+
+		}
+
+		@media screen and (max-width: 320px) {
+			.services {
+				height: 2200px;
+			}
 		}
 
 		@media screen and (min-width: 768px) and (max-width: 900px) { /*Navbar fix*/
@@ -823,13 +833,25 @@
 			}
 		}
 
-		@media screen and (max-width: 768px) { /*Phones*/
+		@media screen and (max-width: 768px) { /*Mobile Phones*/
 			.header-last-text {
 				margin: 0px;
 			}
 
 			.image-wrapper {
 				width: 100%;
+			}
+
+			.footer-icons-wrapper {
+				float: left;
+			}
+
+			.footer-upper {
+				margin-bottom: -12px;
+			}
+
+			.footer-wrapper {
+				margin-top: -12px;
 			}
 		}
 
@@ -919,6 +941,10 @@
 		.cool-button {
 			background-color: transparent !important;
 			border: none;
+		}
+
+		.woman-and-text-section {
+			padding: 0px;
 		}
 
 	</style>
@@ -1386,35 +1412,35 @@
 					<section class="clearfix">
 						<img src="images/devices-responsive.jpg" alt="devices-responsive" class="img-responsive col-md-5 col-md-push-1">
 
-						<div class="main-wrapper col-md-5 col-md-push-2 third-section-wrapper">
-							<div class="mini-wrappe relative">
+						<div class="main-wrapper col-md-5 col-md-push-2 third-section-wrapper col-xs-12 col-xs-push-2">
+							<div class="mini-wrappe relative col-xs-11">
 								<div class="third-section-circles">
 									<i class="fa fa-desktop fa-2x blue-icon" aria-hidden="true"></i>
 								</div>
-								<h4 class="third-section">Responsive design</h4>
-								<p>Lambda is designed to look cool on any device from mobile and tablets to desktop computers and also on retina screens.</p>
+								<h4 class="third-section col-xs-11">Responsive design</h4>
+								<p class="col-xs-11">Lambda is designed to look cool on any device from mobile and tablets to desktop computers and also on retina screens.</p>
 							</div>
 
-							<div class="mini-wrapper relative mini-wrapper-2">
+							<div class="mini-wrapper relative mini-wrapper-2 col-xs-11">
 								<div class="third-section-circles">
 									<i class="fa fa-refresh fa-2x blue-icon" aria-hidden="true"></i>
 								</div>
-								<h4 class="third-section">Free updates</h4>
-								<p>With Lambda you get a free updates forever. Improvements and features will be added to make the theme future proof.</p>
+								<h4 class="third-section col-xs-11">Free updates</h4>
+								<p class="col-xs-11">With Lambda you get a free updates forever. Improvements and features will be added to make the theme future proof.</p>
 							</div>
 
-							<div class="mini-wrapper relative mini-wrapper-3">
+							<div class="mini-wrapper relative mini-wrapper-3 col-xs-11">
 								<div class="third-section-circles">
 									<i class="fa fa-eye fa-2x blue-icon" aria-hidden="true"></i>
 								</div>
-								<h4 class="third-section">Stunning pages</h4>
-								<p>Create stunning pages which look great on any device. Clean HTML5 and CSS, beautifully coded &#38; loads of features.</p>
+								<h4 class="third-section col-xs-11">Stunning pages</h4>
+								<p class="col-xs-11">Create stunning pages which look great on any device. Clean HTML5 and CSS, beautifully coded &#38; loads of features.</p>
 							</div>
 						</div>
 					</section>
 
-					<section>
-						<div class="iphone-section relative">
+					<section class="clearfix">
+						<div class="iphone-section relative col-xs-12">
 								<div class="white-overlay"></div>
 								<div class="col-md-5 col-md-push-1 mobile-apps-text">
 									<h1>Mobile apps</h1>
@@ -1429,7 +1455,7 @@
 								<div class="overlay"></div>
 						</div>
 
-						<div class="laptop-section relative">
+						<div class="laptop-section relative col-xs-12">
 							<div class="overlay"></div>
 							<div>
 								<img src="images/scrollers.png" alt="scrollers" class="img-responsive responsive scrollers col-md-2 col-md-push-2">
@@ -1442,8 +1468,8 @@
 							<div class="white-overlay laptop-white-overlay"></div>
 						</div>
 
-						<div class="woman-and-text-section relative">
-							<div class="text-near-woman carousel slide text-center col-md-6" id="carousel-text" data-ride="carousel">
+						<div class="woman-and-text-section relative col-xs-12">
+							<div class="text-near-woman carousel slide text-center col-md-6 col-sm-6" id="carousel-text" data-ride="carousel">
 
 								<ol class="carousel-indicators">
 									<li data-target="#text-near-woman" data-slide-to="0" class="active"></li>
@@ -1490,7 +1516,7 @@
 						</div>						
 					</section>
 
-					<section>
+					<section class="clearfix">
 						<h1 class="text-center">Why Us?</h1>
 						<div class="blue-line center-block blue-line-near-people"></div>
 						<p class="people-paragraph-text-size text-center col-md-6 col-md-push-3">
@@ -1727,7 +1753,7 @@
 						</div>
 					</section>
 
-					<section class="main-bottom col-md-12 col-xs-12">
+					<section class="main-bottom col-md-12">
 						<div class="main-bottom-wrapper col-md-8 z-index-top col-md-push-2">
 							<h2 class="white text-center">
 								The most advanced, flexible and awesome theme you’ve ever seen. Need more? Feel free to contact us.
@@ -1739,7 +1765,7 @@
 					</section>
 			</main>
 
-			<footer class="col-md-12 footer-wrapper">
+			<footer class="col-md-12 footer-wrapper col-xs-12">
 				<div class="footer-upper">
 					<div class="about-us col-md-3">
 						<h3 class="footer-upper-headings">About Us</h3>
