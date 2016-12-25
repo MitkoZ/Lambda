@@ -25,7 +25,7 @@
 			background-repeat: no-repeat;
 			background-attachment: fixed;
 			color: white;
-			height: 860px;
+			min-height: 1000px;
 			overflow-y: visible;
 		}
 
@@ -780,6 +780,13 @@
 			}
 		}
 		
+		@media screen and (max-width: 991px) { /* Tablets*/
+
+			header {
+				height: 2200px;
+			}
+
+		}
 
 		@media screen and (min-width: 768px) and (max-width: 900px) { /*Navbar fix*/
 			.elements-dropdown-menu {
@@ -799,6 +806,30 @@
 			.elements-dropdown-menu {
 				width: 1170px;
 				transform: translateX(-800px);
+			}
+
+			.moto-wrapper {
+				margin-top: 0px;
+			}
+
+			.moto-heading {
+				margin-top: 10%;
+			}
+		}
+
+		@media screen and (max-width: 831px) { /*scroll fix*/
+			.moto-wrapper {
+				margin-top: 25%;
+			}
+		}
+
+		@media screen and (max-width: 768px) { /*Phones*/
+			.header-last-text {
+				margin: 0px;
+			}
+
+			.image-wrapper {
+				width: 100%;
 			}
 		}
 
@@ -889,6 +920,7 @@
 			background-color: transparent !important;
 			border: none;
 		}
+
 	</style>
 
 </head>
@@ -896,7 +928,7 @@
 <div class="container-fluid wrapper">
 <div class="row">
 		<div class="header-wrapper">
-			<header id="top">
+			<header id="top" class="relative">
 				<div class="overlay">
 					<nav class="navbar navbar-default col-md-12 navbar-fixed-top">
 							<!--Navigation bar mobile-->
@@ -907,7 +939,7 @@
       				</button>
 
 					<div class="collapse navbar-collapse" id="my-collapsing-navbar">
-						<div class="logo-wrapper navbar-header">  
+						<div class="logo-wrapper navbar-brandheader">  
 							<a href="Lambda.html" class="navbar-brand">
 								<img src="images/lambda-logo.png" alt="lambda-logo" class="lambda-logo-png">
 								<div class="logo-text">Lambda</div>
@@ -1045,22 +1077,19 @@
 								<li class="nav-hover"><a href="#">Contact</a></li>
 							</ul>
 						</div>
-						
-						
-						
-
 
 					</div>
 					</nav>
-					<div class="text-center row moto-wrapper">
+
+					<div class="text-center row moto-wrapper col-lg-12 col-xs-12">
 						<h1 class="moto-heading">Hello, this is Lambda</h1>
-						<div class="white-line col-md-offset-6"></div>
+						<div class="white-line col-md-offset-6 col-xs-offset-6"></div>
 						<p class="col-md-6 col-md-offset-3 moto-text">
 							We are a creative web design agency who are passionate with our pixels. We specialise in WordPress theme development and we create pixel perfect themes.
 						</p>
 					</div>
-					<div class="icons-and-text-wrapper text-center">
-						<div class="col-md-4">
+					<div class="icons-and-text-wrapper text-center col-lg-12 col-lg-push-3 col-xs-12">
+						<div class="col-md-4 col-lg-2">
 							<a href="#">
 								<div class="circles-header center-block">
 									<img src="images/pencil.png" alt="pencil" class="header-icons">
@@ -1069,7 +1098,7 @@
 							<h3>Made for the Web</h3>
 							<p class="header-last-text">Lambda is designed with attention to details. Our intention was to create a powerful theme that would to look cool and awesome.</p>
 						</div>
-						<div class="col-md-4">
+						<div class="col-md-4 col-lg-2">
 						<a href="#">
 							<div class="circles-header center-block">
 								<img src="images/display-and-maginifier.png" alt="display-and-maginifier" class="header-icons">
@@ -1078,7 +1107,7 @@
 							<h3>Retina Ready</h3>
 							<p class="header-last-text">Lambda is designed to look cool on any device from mobile and tablets to desktop computers and also on retina screens.</p>
 						</div>
-						<div class="col-md-4">
+						<div class="col-md-4 col-lg-2">
 						<a href="#">
 							<div class="circles-header center-block">
 								<img src="images/display-graphics.png" alt="display-graphics.png" class="header-icons">
@@ -1094,7 +1123,7 @@
 			<main>
 				<div class="text-center">
 					<h1 class="text-center">Our latest work</h1>
-					<div class="blue-line col-md-12 col-md-offset-6"></div>
+					<div class="blue-line col-md-12 col-md-offset-6 col-xs-offset-6"></div>
 					<p class="col-md-6 col-md-offset-3 moto-text">We provide design services that will adapt to your need. Desktop or mobile apps, website or print services. You name it.</p>
 				</div>
 					<section class="row">
@@ -1234,7 +1263,7 @@
 					<section class="services relative">
 							<div class="overlay">
 								<h1 class="text-center white">Our services</h1>
-								<div class="white-line col-md-offset-6"></div>
+								<div class="white-line col-md-offset-6 col-xs-offset-6"></div>
 								<p class="col-md-9 col-md-offset-2 moto-text white text-center">We create a unique process for each client to ensure that business objectives are met, success is achieved and users are happy.</p>
 
 								<div class="row">
@@ -1698,7 +1727,7 @@
 						</div>
 					</section>
 
-					<section class="main-bottom col-md-12">
+					<section class="main-bottom col-md-12 col-xs-12">
 						<div class="main-bottom-wrapper col-md-8 z-index-top col-md-push-2">
 							<h2 class="white text-center">
 								The most advanced, flexible and awesome theme you’ve ever seen. Need more? Feel free to contact us.
