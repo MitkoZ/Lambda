@@ -735,14 +735,74 @@
 				transform: translateX(-500px);
 			}
 		}
+
+		@media screen and (max-width: 768px) { /*Tablets*/
+			nav {
+				background-color: black !important;
+			}
+
+			.navbar-nav>li>a {
+				padding: 0 !important;
+			}
+
+			.nav-hover:hover:before {
+				background: none;
+			}
+
+			.navbar-nav>li>.dropdown-menu {
+				background-color: #6ba4b6 !important;
+			}
+
+			.inline-block {
+				display: block;
+			}
+
+			.padding-elements {
+				padding: 0px;
+			}
+
+			.logo-wrapper {
+				display: block;
+				height: 100px;
+				margin-top: -30px;
+			}
+
+			.buttons {
+				float: none;
+			}
+
+			.elements-dropdown-menu {
+				margin-left: 42%;
+			}
+
+			.navbar-default .navbar-collapse {
+				border-color: transparent;
+			}
+		}
 		
+
+		@media screen and (min-width: 768px) and (max-width: 900px) { /*Navbar fix*/
+			.elements-dropdown-menu {
+				width: 450px;
+				transform: translateX(-150px);
+			}
+		}
+
+		@media screen and (min-width: 901px) and (max-width: 991px) { /*Navbar fix*/
+			.elements-dropdown-menu {
+				width: 450px;
+				transform: translateX(-150px);
+			}
+		}
+
 		@media screen and (min-width:1200px) { /*Large Desktops */
 			.elements-dropdown-menu {
 				width: 1170px;
 				transform: translateX(-800px);
 			}
 		}
-			/*Button*/
+
+			/*Cool navbar hamburger button*/
 		.nav-icon4 {
 		  width: 60px;
 		  height: 45px;
@@ -838,7 +898,7 @@
 		<div class="header-wrapper">
 			<header id="top">
 				<div class="overlay">
-					<nav class="navbar navbar-default col-md-12">
+					<nav class="navbar navbar-default col-md-12 navbar-fixed-top">
 							<!--Navigation bar mobile-->
     				<button type="button" class="navbar-toggle cool-button nav-icon4" data-toggle="collapse" data-target="#my-collapsing-navbar">  
 						  <span></span>
@@ -1785,5 +1845,18 @@
 		});
 	});
 	</script>
+
+<script type="text/javascript">
+	var a = $(".navbar-collapse").offset().top;
+
+$(document).scroll(function(){
+    if($(this).scrollTop() > 0)
+    {   
+       $('.navbar-collapse').css({"background-color":"black"});
+    } else {
+       $('.navbar-collapse').css({"background":"transparent"});
+    }
+});
+</script>
 </body>
 </html>
