@@ -178,6 +178,7 @@
 		.nav-hover {
 			display: inline-block;
 			position: relative;
+			font-size: 16px;
 		}
 
 		.nav-hover:before {
@@ -632,6 +633,27 @@
 			text-decoration: none;
 		}
 
+		.navbar-anchor-attributes-remove:hover, .navbar-anchor-attributes-remove:focus {
+			text-decoration: none;
+		}
+
+		.dropdown-menu>li>a:hover {
+			background-color: transparent;
+		}
+
+		.dropdown-menu>li>a, .dropdown-menu>li>a, .dropdown-menu>ul>li>a {
+			padding-top: 8px !important;
+			padding-bottom: 8px !important;
+		}
+
+		.dropdown-menu>ul>li>a {
+			text-decoration: none;
+		}
+
+		.navbar-anchor-attributes-remove {
+			background-color: transparent !important;
+		}
+
 		.about-us, .recent-posts, .categories, .archives {
 			margin-top: 3%;
 		}
@@ -676,6 +698,137 @@
 			color: rgb(196, 48, 43);
 			transition: color .2s;
 		}
+
+		.dropdown-menu-navbar {
+			background-color: rgba(68,113,122,.9);
+    		box-shadow: 0 2px 4px rgba(0,0,0,.1), 0 3px 0 rgba(160,199,207,.9) inset;
+    		width: 220px;
+		}
+
+		.nav-dropdown-element-hover:hover {
+			color: rgba(255,255,255,.75) !important;
+
+		}
+
+		.elements-dropdown-header {
+			color: rgba(255,255,255,.75);
+			padding: 8px 20px;
+		}
+
+		.elements-dropdown-menu {
+			width: 1170px;
+  			transform: translateX(-75%);
+		}
+
+		.inline-block {
+			display: inline-block;
+		}
+
+		.padding-elements {
+			padding-top: 12px;
+			padding-bottom: 12px;
+		}
+
+		@media screen and (min-width: 768px) { /*Tablets*/
+			.elements-dropdown-menu {
+				width: 800px;
+				transform: translateX(-500px);
+			}
+		}
+		
+		@media screen and (min-width:1200px) { /*Large Desktops */
+			.elements-dropdown-menu {
+				width: 1170px;
+				transform: translateX(-800px);
+			}
+		}
+			/*Button*/
+		.nav-icon4 {
+		  width: 60px;
+		  height: 45px;
+		  position: relative;
+		  -webkit-transform: rotate(0deg);
+		  -moz-transform: rotate(0deg);
+		  -o-transform: rotate(0deg);
+		  transform: rotate(0deg);
+		  -webkit-transition: .5s ease-in-out;
+		  -moz-transition: .5s ease-in-out;
+		  -o-transition: .5s ease-in-out;
+		  transition: .5s ease-in-out;
+		  cursor: pointer;
+		}
+
+		.nav-icon4 span {
+		  display: block;
+		  position: absolute;
+		  height: 9px;
+		  width: 100%;
+		  background: white;
+		  border-radius: 9px;
+		  opacity: 1;
+		  left: 0;
+		  -webkit-transform: rotate(0deg);
+		  -moz-transform: rotate(0deg);
+		  -o-transform: rotate(0deg);
+		  transform: rotate(0deg);
+		  -webkit-transition: .25s ease-in-out;
+		  -moz-transition: .25s ease-in-out;
+		  -o-transition: .25s ease-in-out;
+		  transition: .25s ease-in-out;
+		}
+
+
+		.nav-icon4 span:nth-child(1) {
+		  top: 0px;
+		  -webkit-transform-origin: left center;
+		  -moz-transform-origin: left center;
+		  -o-transform-origin: left center;
+		  transform-origin: left center;
+		}
+
+		.nav-icon4 span:nth-child(2) {
+		  top: 18px;
+		  -webkit-transform-origin: left center;
+		  -moz-transform-origin: left center;
+		  -o-transform-origin: left center;
+		  transform-origin: left center;
+		}
+
+		.nav-icon4 span:nth-child(3) {
+		  top: 36px;
+		  -webkit-transform-origin: left center;
+		  -moz-transform-origin: left center;
+		  -o-transform-origin: left center;
+		  transform-origin: left center;
+		}
+
+		.nav-icon4.open span:nth-child(1) {
+		  -webkit-transform: rotate(45deg);
+		  -moz-transform: rotate(45deg);
+		  -o-transform: rotate(45deg);
+		  transform: rotate(45deg);
+		  top: -3px;
+		  left: 8px;
+		}
+
+		.nav-icon4.open span:nth-child(2) {
+		  width: 0%;
+		  opacity: 0;
+		}
+
+		.nav-icon4.open span:nth-child(3) {
+		  -webkit-transform: rotate(-45deg);
+		  -moz-transform: rotate(-45deg);
+		  -o-transform: rotate(-45deg);
+		  transform: rotate(-45deg);
+		  top: 39px;
+		  left: 8px;
+		}
+
+		.cool-button {
+			background-color: transparent !important;
+			border: none;
+		}
 	</style>
 
 </head>
@@ -685,9 +838,16 @@
 		<div class="header-wrapper">
 			<header id="top">
 				<div class="overlay">
-					<nav class="navbar-default col-md-12">
-					<div>
-						<div class="logo-wrapper navbar-header">
+					<nav class="navbar navbar-default col-md-12">
+							<!--Navigation bar mobile-->
+    				<button type="button" class="navbar-toggle cool-button nav-icon4" data-toggle="collapse" data-target="#my-collapsing-navbar">  
+						  <span></span>
+						  <span></span>
+						  <span></span>                   
+      				</button>
+
+					<div class="collapse navbar-collapse" id="my-collapsing-navbar">
+						<div class="logo-wrapper navbar-header">  
 							<a href="Lambda.html" class="navbar-brand">
 								<img src="images/lambda-logo.png" alt="lambda-logo" class="lambda-logo-png">
 								<div class="logo-text">Lambda</div>
@@ -695,14 +855,141 @@
 						</div>
 						<div class="buttons">
 							<ul class="nav navbar-nav navigation-bar">
+							
 								<li class="nav-hover"><a href="#">Home</a></li>
-								<li class="nav-hover"><a href="#">Pages</a></li>
-								<li class="nav-hover"><a href="#">Elements</a></li>
-								<li class="nav-hover"><a href="#">Portfolio</a></li>
-								<li class="nav-hover"><a href="#">Blog</a></li>
+								<li class="nav-hover dropdown nav-hover">
+									<a href="#" data-toggle="dropdown" class="dropdown-toggle navbar-anchor-attributes-remove" aria-expanded="false">Pages</a>
+										<ul class="dropdown-menu dropdown-menu-navbar">
+								            <li><a href="#" class="nav-dropdown-element-hover">Services</a></li>
+								            <li><a href="#" class="nav-dropdown-element-hover">Services Alt</a></li>
+								            <li><a href="#" class="nav-dropdown-element-hover">Single Service</a></li>
+								            <li><a href="#" class="nav-dropdown-element-hover">About Us</a></li>
+								            <li><a href="#" class="nav-dropdown-element-hover">404 Page</a></li>
+								            <li><a href="#" class="nav-dropdown-element-hover">Right Sidebar</a></li>
+								            <li><a href="#" class="nav-dropdown-element-hover">Left Sidebar</a></li>
+							        	</ul>
+					        	</li>
+								<li class="nav-hover dropdown nav-hover">
+									<a href="#" data-toggle="dropdown" class="dropdown-toggle navbar-anchor-attributes-remove" aria-expanded="false">Elements</a>
+									
+										<div class="dropdown-menu dropdown-menu-navbar elements-dropdown-menu">
+											<ul class="inline-block col-md-3">
+												<li class="elements-dropdown-header">
+													<strong>Typography &#038; Layout</strong>
+												</li>
+									            <li class="padding-elements">
+									            	<a href="#" class="nav-dropdown-element-hover">Basic Type</a>
+									            </li>
+									            <li class="padding-elements">
+									            	<a href="#" class="nav-dropdown-element-hover">Blockquotes</a>
+									            </li>
+									            <li class="padding-elements">
+									            	<a href="#" class="nav-dropdown-element-hover">Font Icons</a>
+									            </li>
+									            <li class="padding-elements">
+									            	<a href="#" class="nav-dropdown-element-hover">Columns</a>
+									            </li>
+									            <li class="padding-elements">
+									            	<a href="#" class="nav-dropdown-element-hover">Jumbotron</a>
+									            </li>
+									         </ul>
+
+									          <ul class="inline-block col-md-3">
+												<li class="elements-dropdown-header">
+													<strong>Bootstrap Components</strong>
+												</li>
+									            <li class="padding-elements">
+									            	<a href="#" class="nav-dropdown-element-hover">Accordions</a>
+									            </li>
+									            <li class="padding-elements">
+									            	<a href="#" class="nav-dropdown-element-hover">Tablets</a>
+									            </li>
+									            <li class="padding-elements">
+									            	<a href="#" class="nav-dropdown-element-hover">Buttons</a>
+									            </li>
+									            <li class="padding-elements">
+									            	<a href="#" class="nav-dropdown-element-hover">Panels</a>
+									            </li>
+									            <li class="padding-elements">
+									            	<a href="#" class="nav-dropdown-element-hover">Tables</a>
+									            </li>
+									         </ul>
+
+									         <ul class="inline-block col-md-3">
+												<li class="elements-dropdown-header">
+													<strong>Misc</strong>
+												</li>
+									            <li class="padding-elements">
+									            	<a href="#" class="nav-dropdown-element-hover">Pricing</a>
+									            </li>
+									            <li class="padding-elements">
+									            	<a href="#" class="nav-dropdown-element-hover">Feature font icons</a>
+									            </li>
+									            <li class="padding-elements">
+									            	<a href="#" class="nav-dropdown-element-hover">Feature lists</a>
+									            </li>
+									            <li class="padding-elements">
+									            	<a href="#" class="nav-dropdown-element-hover">Scroll buttons</a>
+									            </li>
+									         </ul>
+
+									         <ul class="inline-block col-md-3">
+												<li class="elements-dropdown-header">
+													<strong>Infographic Elements</strong>
+												</li>
+									            <li class="padding-elements">
+									            	<a href="#" class="nav-dropdown-element-hover">Charts</a>
+									            </li>
+									            <li class="padding-elements">
+									            	<a href="#" class="nav-dropdown-element-hover">Counters</a>
+									            </li>
+									            <li class="padding-elements">
+									            	<a href="#" class="nav-dropdown-element-hover">Countdown timers</a>
+									            </li>
+									            <li class="padding-elements">
+									            	<a href="#" class="nav-dropdown-element-hover">Pie Charts</a>
+									            </li>
+									            <li class="padding-elements">
+									            	<a href="#" class="nav-dropdown-element-hover">Progress Bars</a>
+									            </li>
+									         </ul>
+							        </div>
+					        	</li>
+
+					        	<li class="nav-hover dropdown nav-hover">
+									<a href="#" data-toggle="dropdown" class="dropdown-toggle navbar-anchor-attributes-remove" aria-expanded="false">Portfolio</a>
+										<ul class="dropdown-menu dropdown-menu-navbar">
+								            <li><a href="#" class="nav-dropdown-element-hover">2 columns</a></li>
+								            <li><a href="#" class="nav-dropdown-element-hover">3 columns</a></li>
+								            <li><a href="#" class="nav-dropdown-element-hover">4 columns</a></li>
+								            <li><a href="#" class="nav-dropdown-element-hover">Masonry</a></li>
+								            <li><a href="#" class="nav-dropdown-element-hover">Fullwidth</a></li>
+								            <li><a href="#" class="nav-dropdown-element-hover">Standart Item</a></li>
+								            <li><a href="#" class="nav-dropdown-element-hover">Gallery Item</a></li>
+								            <li><a href="#" class="nav-dropdown-element-hover">Video Item</a></li>
+							        	</ul>
+					        	</li>
+
+								<li class="nav-hover dropdown nav-hover">
+									<a href="#" data-toggle="dropdown" class="dropdown-toggle navbar-anchor-attributes-remove" aria-expanded="false">Blog</a>
+										<ul class="dropdown-menu dropdown-menu-navbar">
+								            <li><a href="#" class="nav-dropdown-element-hover">Right Sidebar</a></li>
+								            <li><a href="#" class="nav-dropdown-element-hover">No Sidebar</a></li>
+								            <li><a href="#" class="nav-dropdown-element-hover">Left Sidebar</a></li>
+								            <li><a href="#" class="nav-dropdown-element-hover">Masonry</a></li>
+								            <li><a href="#" class="nav-dropdown-element-hover">Normal Post</a></li>
+								            <li><a href="#" class="nav-dropdown-element-hover">Gallery Post</a></li>
+								            <li><a href="#" class="nav-dropdown-element-hover">Video Post</a></li>
+							        	</ul>
+					        	</li>
 								<li class="nav-hover"><a href="#">Contact</a></li>
 							</ul>
 						</div>
+						
+						
+						
+
+
 					</div>
 					</nav>
 					<div class="text-center row moto-wrapper">
@@ -1489,5 +1776,14 @@
 		</div>
 	</a>
 </div>
+
+<!--Button script-->
+	<script type="text/javascript">
+		$(document).ready(function(){
+		$('.nav-icon4').click(function(){
+			$(this).toggleClass('open');
+		});
+	});
+	</script>
 </body>
 </html>
